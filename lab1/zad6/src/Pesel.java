@@ -6,6 +6,11 @@ public class Pesel {
     public static boolean check(String n) {
         if (n.length() != 11)
             return false;
+        for(int i=0;i<11;i++)
+        {
+            if(!Character.isDigit(n.charAt(i)))
+                return false;
+        }
 
         int kontrolna = Character.getNumericValue(n.charAt(10));
         int suma = 9 * Character.getNumericValue(n.charAt(0))+
