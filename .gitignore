@@ -1,0 +1,12 @@
+
+*.xml
+*.class
+*.idea
+*.properties
+*.mf
+build
+.idea
+
+
+/lab2/Figury/nbproject/private/
+/lab2/ABC/nbproject/private/
