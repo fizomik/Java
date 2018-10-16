@@ -45,6 +45,7 @@ public class Test {
                     for (int i=0;i<figury.size();i++) {
                         suma+=figury.get(i).area();
                     }
+		    System.out.println(+suma);
                     break;
                 default:{
                     System.out.print("Podaj liczbę od 1-4: ");
