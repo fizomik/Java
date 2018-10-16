@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.Integer.*;
 /**
  * @author Damian Kozyra
  */
@@ -15,6 +16,8 @@ public class Peselprogram {
             else
                 System.out.print("Niepoprawny numer pesel! ");
         }catch(IOException e){e.printStackTrace();}
+
+
     }
 }
 
