@@ -26,7 +26,7 @@ public class Kwadrat {
 
     public boolean isBigger(Kwadrat o1){
 
-        return o1.a>this.a;
+        return o1.a*o1.a>this.a*this.a;
 
     }
 }
