@@ -19,6 +19,12 @@ public class Prostokąt extends Kwadrat {
 
     }
 
+    public double area(){
+
+        return a*b;
+
+    }
+
     public boolean isBigger(Prostokąt o1){
 
         return o1.a*o1.b>this.a*this.b;
