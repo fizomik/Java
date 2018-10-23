@@ -150,7 +150,6 @@ public class EmailMessage {
         }
         generateMailMessage.setSubject(subject);
         generateMailMessage.setContent(content, mimeType);
-        System.out.println("Mail Session has been created successfully..");
 
 
         Transport transport = getMailSession.getTransport("smtp");
