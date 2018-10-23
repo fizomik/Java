@@ -6,5 +6,6 @@
 *.mf
 *.iml
 *.jar
+*.mail
 .idea
 build
