@@ -1,6 +1,7 @@
 
 *.xml
 *.class
+*.txt
 *.idea
 *.properties
 *.mf
