@@ -8,13 +8,13 @@ import java.util.regex.Pattern;
 public class MicroDVDDelayer {
 
 
-    public static void microDVDDelayer(String inputFilePath, String outputFilePath, int delay, int fps) throws IOException, ImproperDataException {
+    public static void microDVDDelayer(String inFilePath, String outFilePath, int delay, int fps) throws IOException, ImproperDataException {
         BufferedReader input = null;
         FileWriter output = null;
         try (BufferedReader input1 = new BufferedReader(new FileReader(
-                new File(inputFilePath)));
+                new File(inFilePath)));
              FileWriter output1 = new FileWriter(new File(
-                     outputFilePath))) {
+                     outFilePath))) {
             input = input1;
             output = output1;
             String temp;
