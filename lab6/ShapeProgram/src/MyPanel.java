@@ -29,19 +29,6 @@ public class MyPanel extends JPanel implements MouseListener, MouseMotionListene
         addMouseListener(this);
         addMouseMotionListener(this);
     }
-        /*
-        for (int i = 0; i < listofshapes.size(); i++) {
-            if(listofshapes.get(i).name=="Circle" && listofshapes.get(i).x>=x2 && listofshapes.get(i).x<=x2+50 && listofshapes.get(i).y>y2 && listofshapes.get(i).y<y2+50 ) {
-                listofshapes.get(i).x = arg0.getX();
-                listofshapes.get(i).y = arg0.getY();
-                System.out.println("Kurwo");
-
-
-            }
-            if(listofshapes.get(i).name=="Triangle");
-            if(listofshapes.get(i).name=="Square");
-            if(listofshapes.get(i).name=="Rectangle");
-        }*/
 
     @Override
     public void mouseMoved(MouseEvent arg0) {
@@ -61,7 +48,6 @@ public class MyPanel extends JPanel implements MouseListener, MouseMotionListene
             x2 = (int) p.getX();
             y2 = (int) p.getY();
             if (x1 >= x2 && y1 >= y2 && x1 <= x2 + 50 && y1 <= y2 + 50) {
-                System.out.println(p);
                 movingPoint = p;
             }
             index++;
@@ -137,8 +123,13 @@ public class MyPanel extends JPanel implements MouseListener, MouseMotionListene
     }
 
     public void paint(Graphics arg0) {
+        super.paint(arg0);
+        Graphics2D g2 = (Graphics2D) arg0;
+        g2.setColor(Color.WHITE);
+        g2.fillRect(0, 0, 1920, 1080);
 
         for (int i = 0; i < listofshapes.size(); i++) {
+            listofshapes.get(i).setBounds(points.get(i).x, points.get(i).y);
             listofshapes.get(i).draw(arg0);
         }
 

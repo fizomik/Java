@@ -11,7 +11,10 @@ public class Rectangle extends Shape{
         this.x = x;
         this.y = y;
     }
-
+    public void setBounds(int xIn, int yIn) {
+        x = xIn;
+        y = yIn;
+    }
 
     @Override
     public void draw(Graphics arg0) {

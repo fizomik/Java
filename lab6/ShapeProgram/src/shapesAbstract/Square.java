@@ -10,6 +10,10 @@ public class Square extends Shape{
         this.x = x;
         this.y = y;
     }
+    public void setBounds(int xIn, int yIn) {
+        x = xIn;
+        y = yIn;
+    }
 
     public Square(String _name){ this.name=_name; }
 
