@@ -129,7 +129,7 @@ public class MyPanel extends JPanel implements MouseListener, MouseMotionListene
         g2.fillRect(0, 0, 1920, 1080);
 
         for (int i = 0; i < listofshapes.size(); i++) {
-            listofshapes.get(i).setBounds(points.get(i).x, points.get(i).y);
+            listofshapes.get(i).setXandY(points.get(i).x, points.get(i).y);
             listofshapes.get(i).draw(arg0);
         }
 

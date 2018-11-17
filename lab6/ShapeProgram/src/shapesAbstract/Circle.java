@@ -9,9 +9,9 @@ public class Circle extends Shape{
         this.x = x;
         this.y = y;
     }
-    public void setBounds(int xIn, int yIn) {
-        x = xIn;
-        y = yIn;
+    public void setXandY(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     @Override
